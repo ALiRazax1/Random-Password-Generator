@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <section class="container-xxl py-5">
+      <h1 class="main-heading text-center">Random Password Generator</h1>
+      <p class="text-center">
+        Create strong and secure passwords to keep your account safe online.
+      </p>
+      <div class="row  gy-5 mt-5 py-5">
+        <div class="col-12 col-lg-5 text-light">
+          <img class="w-100" src="./assets/download.svg" alt="" />
+        </div>
+        <div class="col-12 col-lg-7">
+          <div class="row column-gap-2">
+            <input
+              class="col-lg-8 offset-lg-0 col-sm-5 offset-sm-3  col-5 offset-4 rounded-5 bg-white"
+              type="text"
+              value="Disabled readonly input"
+              aria-label="Disabled input example"
+              disabled
+              readonly
+            />
+            <button class="col-3 mt-4 my-sm-0 offset-5 offset-sm-0 col-lg-2 copy-btn btn btn-primary rounded-pill">
+              Copy
+            </button>
+            <h1 class="h4 fw-light col-12 col-lg-4 pt-5 text-center fw-normal">
+              Password length: <br />
+              <span class="fw-semibold ">50</span>
+            </h1>
+
+            <input
+              class="range-slider"
+              type="range"
+              class=" col-lg-7 offset-lg-0  w-50 mt-auto"
+              value="50"
+              id="customRange1"
+            />
+            <h1 class="check-box-heading h4 fw-light col-12 text-center col-lg-4 pt-5 text-center fw-normal">
+              Charecter 
+              used:
+            </h1>
+            <div class="check-div col col-sm-12  ">
+            <div class=" col-sm-1 col  mt-5 h3 px-5 form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineCheckbox1">ABC</label>
+            </div>
+            <div class=" col-sm-1 col  mt-5 h3 px-5 form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineCheckbox2">abc</label>
+            </div>
+            <div class=" col-sm-1 col  mt-5 h3 px-5 form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineCheckbox3">123</label>
+            </div>
+            <div class=" col-sm-1 col  mt-5 h3 px-5 form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="inlineCheckbox3"
+                value="option3"
+              />
+              <label class="form-check-label" for="inlineCheckbox3">#$&</label>
+            </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-section text-center">
+      <h1>What makes a password strong?</h1>
+      <div
+        class="container-xxl mx-auto row row-cols-1 row-cols-md-3 gx-5 gy-3 mt-5"
+      >
+        <div class="col">
+          <div class="card-bg py-4 px-4">
+            <img src="./assets/password-checkmark--key-tick.svg" alt="" />
+            <h1 class="h5 fw-bold mt-4">Long</h1>
+            <p>
+              The longer a password, the more secure it is. A strong password
+              should be at least 10 characters long.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg py-4 px-4">
+            <img src="./assets/https-encryption--lock.svg" alt="" />
+            <h1 class="h5 fw-bold mt-4">Complex</h1>
+            <p>
+              Strong passwords use a combination of letters, numbers, cases, and
+              symbols to form an unpredictable string of characters that doesn't
+              resemble words or names.
+            </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card-bg py-4 px-4">
+            <img
+              src="./assets/sensitive-data-shield--document-fingerprint.svg"
+              alt=""
+            />
+            <h1 class="h5 fw-bold mt-4">Unique</h1>
+            <p>
+              A strong password should be unique to each account to reduce
+              vulnerability in the event of a hack.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-xxl faqs-section mt-5">
+      <h1 class="text-center pt-5">Password generator FAQs</h1>
+      <p class="text-center pb-5 pt-3">
+        Questions about this random password generator? Answers below!
+      </p>
+      <div
+        class="accordion w-75 mx-auto border-1 py-5"
+        id="accordionPanelsStayOpenExample"
+      >
+        <div class="accordion-item border-1 rounded-top-5">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white border-1 rounded-top-5 collapse"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseOne"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseOne"
+            >
+              Is the Avast Password Generator safe to use?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseOne"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor,
+                veritatis ex velit voluptates minus aperiam cupiditate? Ut iure
+                ratione dicta velit tenetur. Amet sed officiis neque voluptate,
+                quod nihil omnis.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseTwo"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseTwo"
+            >
+              Why should I use a password generator?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseTwo"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptate placeat quam eligendi amet sapiente excepturi ab
+                laboriosam pariatur rem ipsam doloremque nisi, fugiat odit
+                veritatis magnam debitis officiis nobis voluptatum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseThree"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseThree"
+            >
+              What is the best password generator?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseThree"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ipsum et sit distinctio dignissimos eaque, deserunt quia
+                dolorum, quasi ullam cum maiores aliquid? Adipisci totam placeat
+                molestias odio, earum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFour"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFour"
+            >
+              What are the requirements for strong password?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFour"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ipsum et sit distinctio dignissimos eaque, deserunt quia
+                dolorum, quasi ullam cum maiores aliquid? Adipisci totam placeat
+                molestias odio, earum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseFive"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseFive"
+            >
+              How do I get a random password?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseFive"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ipsum et sit distinctio dignissimos eaque, deserunt quia
+                dolorum, quasi ullam cum maiores aliquid? Adipisci totam placeat
+                molestias odio, earum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSix"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSix"
+            >
+              Can password generators be hacked?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSix"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ipsum et sit distinctio dignissimos eaque, deserunt quia
+                dolorum, quasi ullam cum maiores aliquid? Adipisci totam placeat
+                molestias odio, earum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseSeven"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseSeven"
+            >
+              Is there a secure way to store password?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseSeven"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ipsum et sit distinctio dignissimos eaque, deserunt quia
+                dolorum, quasi ullam cum maiores aliquid? Adipisci totam placeat
+                molestias odio, earum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item border-1 rounded-bottom-5">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button bg-white collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#panelsStayOpen-collapseEight"
+              aria-expanded="false"
+              aria-controls="panelsStayOpen-collapseEight"
+            >
+              What makes a password safe?
+            </button>
+          </h2>
+          <div
+            id="panelsStayOpen-collapseEight"
+            class="accordion-collapse collapse"
+          >
+            <div class="accordion-body">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+                ipsum et sit distinctio dignissimos eaque, deserunt quia
+                dolorum, quasi ullam cum maiores aliquid? Adipisci totam placeat
+                molestias odio, earum saepe.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<script src="./app.js"></script>
+    <script src="./bootstrap.js"></script>
+    <script src="./bundle.js"></script>
+    <script src="./popper.js"></script>
+  </body>
+</html>

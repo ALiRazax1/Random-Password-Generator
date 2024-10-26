@@ -1,0 +1,161 @@
+@font-face {
+  font-family: miera-ex-bold;
+  src: url(./assets/fonts/MierA-ExtraBold.woff2);
+}
+@font-face {
+  font-family: miera-light;
+  src: url(./assets/fonts/MierA-Light.woff2);
+}
+p{font-family: miera-light;}
+.main-heading, .card-section >h1 {
+  font-family: miera-ex-bold;
+  font-size: 64px;
+}
+input {
+  height: 60px;
+  border-color: rgba(128, 128, 128, 0.315);
+}
+
+.range-slider {
+  -webkit-appearance: none;
+  margin-top: auto;
+  height: 20px;
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.075);
+  border-color: black;
+  border-radius: 50px;
+}
+.range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+
+  outline: #0070f6 groove 1px;
+  background: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.form-check-input {
+  background-color: white;
+  box-shadow: 1px 1px 10px 1px rgba(128, 128, 128, 0.116) inset;
+}
+
+.card-section{
+    background-color: #fff1e5;padding: 100px 0px;
+}
+.card-section >h1 {
+    font-family: miera-ex-bold;
+    font-size: 50px;
+  }
+  .card-section p {font-size: 14px;line-height: 25px;}
+.card-bg{background-color: #fff9f5;border-radius: 25px;outline-color: #ffe4cc2a;outline-width: 2px;outline-style: groove;}
+
+/* faqs section */
+
+.faqs-section h1{font-family: miera-ex-bold;}
+
+
+
+
+.accordion-button:not(.collapsed)::after{
+  content: "x";
+  padding: 0px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 400 !important;
+  color: #ffffff;
+  background-color: #0070f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 50px;
+  background-image: none !important;
+border-radius: 50px;
+width: 50px;
+  height: 50px ;
+  border: 1px solid #0070f6;
+  transition: 0.5s;
+  margin-top: 0px;
+padding-bottom: 8px ;
+transition: 0.5s;
+}
+.accordion-button:hover:after{
+  
+  color: #ffffff;
+  background-color: #0070f6;
+
+  border: 1px solid #0070f6;
+
+}
+.accordion-button:not(.collapsed){
+  color: #0070f6;
+}
+
+
+.accordion-button::after{
+  content: "+";
+  font-size: 30px;
+  font-weight: 100;
+  font-family:Arial, Helvetica, sans-serif;
+  color: #0070f6;
+  background-image: none;
+  display: flex;
+  justify-content: center;
+align-items: center;
+  width: 50px;
+  height: 50px;
+border: 1px solid #0070f6;
+border-radius: 50px;
+  background-color: white;
+  padding-top: 3px;
+transition: 0.3s;
+}
+.accordion-button{
+  font-family: miera-ex-bold;
+  font-size: 20px;
+}
+.accordion-button:hover{
+  color: #0070f6;
+}
+
+
+@media only screen and (min-width:768px){
+  .card-section .card-bg { 
+    height: 400px;
+  }
+}
+@media only screen and (min-width: 1080px){
+   .card-section .card-bg{height: 350px;
+    
+   }
+   .card-section .col {width: 30%;}
+   .card-section .row {padding-left: 180px;}
+}
+
+@media only screen and (min-width: 576px){
+
+.copy-btn{width:100px}
+}
+@media only screen and (max-width: 576px)
+{
+  .copy-btn {
+    /* width: 100px; */
+    width: 20%;
+    height: 70px;
+    
+  }
+}
+@media only screen and (max-width:991px) {
+  .range-slider{
+    margin: 20px 25%;
+  }
+  .check-box-heading,.form-check-label{
+    font-size: 24px ;
+  }
+  .check-div{margin: auto;}
+  h1{
+    font-size: 40px !important;
+  }
+}
