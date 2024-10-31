@@ -21,29 +21,32 @@
         <div class="col-12 col-lg-7">
           <div class="row column-gap-2">
             <input
-              class="col-lg-8 offset-lg-0 col-sm-5 offset-sm-3  col-5 offset-4 rounded-5 bg-white"
+            id="password"
+              class="col-lg-8 offset-lg-0 col-sm-5 offset-sm-3  col-8 offset-2 rounded-5 bg-white "
               type="text"
-              value="Disabled readonly input"
+              value="readonly "
               aria-label="Disabled input example"
               disabled
               readonly
             />
-            <button class="col-3 mt-4 my-sm-0 offset-5 offset-sm-0 col-lg-2 copy-btn btn btn-primary rounded-pill">
-              Copy
+            <button id="password-generator" class="col-3 mt-4 my-sm-0 offset-5 offset-sm-0 col-lg-2 copy-btn btn btn-primary rounded-pill">
+              Generate
             </button>
-            <h1 class="h4 fw-light col-12 col-lg-4 pt-5 text-center fw-normal">
+            <h1 class="h4 fw-light col-12 col-lg-4 pt-5 text-center text-lg-start  fw-normal">
               Password length: <br />
-              <span class="fw-semibold ">50</span>
+              <span class="fw-semibold" id="password-length">8</span>
             </h1>
 
             <input
+            max="50"
+            min="6"
               class="range-slider"
               type="range"
               class=" col-lg-7 offset-lg-0  w-50 mt-auto"
-              value="50"
+              value="8"
               id="customRange1"
             />
-            <h1 class="check-box-heading h4 fw-light col-12 text-center col-lg-4 pt-5 text-center fw-normal">
+            <h1 class="check-box-heading h4 fw-light col-12 col-lg-4 pt-5 text-center text-lg-start fw-normal">
               Charecter 
               used:
             </h1>
